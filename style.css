@@ -192,15 +192,19 @@ footer {
 .block .container .flexible {
     flex: 1;
 }
-
+.block.intro2 .container {
+    justify-content: center;
+}
 .block.about .container {
     align-items: center;
 }
 .block.about .container .block-text {
     font-size: 1.6em;
-    color: red;
     text-transform: uppercase;
     line-height: 1.8;
+}
+.block.about .container .block-text span {
+    color: red;
 }
 .block.fourth-block .container {
     align-items: center;
@@ -289,6 +293,13 @@ footer {
 .img.kids {
     background-image: url('img/IskraKids.png');
     aspect-ratio: 1407 / 2416;
+}
+.img.flashlight {
+    background-image: url('img/IskraFlashlight.jpg');
+    aspect-ratio: 700 / 989;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
 }
 .img.logo {
     width: 200px;
@@ -654,7 +665,6 @@ footer {
 .awards-header {
     font-size: 2em;
     font-weight: 400;
-    margin-bottom: 1.5em;
     letter-spacing: 0.02em;
     text-transform: uppercase;
 }
