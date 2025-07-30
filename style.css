@@ -307,12 +307,20 @@ footer {
     margin-right: 14%;
 }
 .img.flashlight {
-    background-image: url('img/IskraFlashlight.jpg');
+    background-image: url('img/IskraFlashlightVol3.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right bottom;
     height: 300px;
     width: 86%;
+}
+.img.flashlighter {
+    background-image: url('img/IskraFlashlighterOnly.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 140px;
+    width: 140px;
 }
 .img.slogan {
     background-image: url('img/IskraSlogan.jpg');
