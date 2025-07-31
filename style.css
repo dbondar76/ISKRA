@@ -317,12 +317,21 @@ footer {
     width: 86%;
 }
 .img.flashlighter {
-    background-image: url('img/IskraFlashlighterOnly.png');
+    background-image: url('img/IskraFlashlighterOnlyReflected.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    height: 140px;
-    width: 140px;
+    height: 300px;
+    width: 300px;
+}
+.img.podium {
+    background-image: url('img/IskraPodium3.jpg');
+    /*aspect-ratio: 640 / 482;*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 120px;
+    width: 180px;
 }
 .img.slogan {
     background-image: url('img/IskraSlogan.jpg');
