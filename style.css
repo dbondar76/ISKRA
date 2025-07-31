@@ -326,7 +326,7 @@ footer {
 }
 .img.podium {
     background-image: url('img/IskraPodium3.jpg');
-    /*aspect-ratio: 640 / 482;*/
+    aspect-ratio: 640 / 482;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
