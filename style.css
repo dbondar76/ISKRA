@@ -299,7 +299,7 @@ footer {
     aspect-ratio: 1280 / 1280;
 }
 .img.crowd {
-    background-image: url('img/IskraСrowd.jpg');
+    background-image: url('img/IskraСrowd1.jpg');
     /*aspect-ratio: 1280 / 372;*/
     height: 140px;
     width: 100%;
@@ -361,7 +361,7 @@ footer {
 .img.balcony {
     width: 150px;
     height: 200px;
-    background-image: url('img/IskraBalcony.png');
+    background-image: url('img/IskraBalcony1.jpg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -371,6 +371,14 @@ footer {
     /*aspect-ratio: 614 / 807;*/
     width: 150px;
     height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img.clown {
+    width: 300px;
+    height: 250px;
+    background-image: url('img/IskraClown.jpg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -724,6 +732,8 @@ footer {
 .awards-section {
     margin: 3em 0 0 0;
     text-align: center;
+    position: relative;
+    width: 100%;
 }
 
 .awards-header {
@@ -745,7 +755,6 @@ footer {
     position: relative;
     background: red;
     width: 100%;
-    max-width: 1120px;
     margin: 0 auto;
     min-height: 380px;
     display: flex;
@@ -839,4 +848,66 @@ footer {
     .awards-title { font-size: 1.17em; }
     .awards-envelope-bg::before { height: 170px; }
     .awards-carousel img { height: 145px; }
+}
+
+/* MAPA */
+.find-us-section {
+    position: relative;
+    width: 100%;
+}
+
+.find-us-title {
+    text-align: center;
+    font-size: 2em;
+    color: #d72d2d;
+    margin-bottom: 1.3em;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+}
+
+.find-us-flex {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.find-us-map {
+    flex: 1 1 340px;
+    min-width: 280px;
+    max-width: 400px;
+}
+.find-us-info {
+    flex: 1 1 260px;
+    min-width: 240px;
+    font-size: 1.3em;
+    color: #26201b;
+    background: #fff;
+    border-radius: 1.2em;
+    padding: 2.1em 1.5em 1.5em 2em;
+}
+.find-us-info .address {
+    font-weight: bold;
+    margin-bottom: 0.6em;
+}
+.find-us-info .metro,
+.find-us-info .transport {
+    margin-bottom: 0.6em;
+}
+.find-us-info b {
+    color: #d72d2d;
+    font-weight: bold;
+}
+.find-us-info .entrance-tip {
+    margin-top: 1.2em;
+    color: #a1161d;
+    font-style: italic;
+    font-size: 0.97em;
+}
+
+@media (max-width: 900px) {
+    .find-us-flex { flex-direction: column; gap: 1.2em; }
+    .find-us-map, .find-us-info { max-width: 100%; min-width: 0; }
+    .find-us-info { padding: 1.3em 0.7em; }
 }
