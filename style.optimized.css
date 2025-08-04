@@ -715,7 +715,7 @@ footer {
     border: 0.3125em solid #fff; /* 5px */
 }
 .awards-carousel img:hover {
-    transform: scale(1.2);
+    transform: scale(1.24);
     box-shadow: 0 0.75em 2em rgba(170,0,20,0.18); /* 12px 32px */
     z-index: 2;
 }
