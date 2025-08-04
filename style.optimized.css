@@ -153,6 +153,9 @@ footer {
     text-transform: uppercase;
     font-weight: bold;
 }
+.block .highlight {
+    color: red;
+}
 .block .container {
     display: flex;
     flex-direction: row;
@@ -182,7 +185,9 @@ footer {
 .block.light .container {
     padding: 0 0 3.75em;
 }
-.block.crowd .container {}
+.block.crowd .container {
+    padding-top: 0;
+}
 .block.fourth-block .container {
     align-items: center;
 }
@@ -196,6 +201,7 @@ footer {
 }
 .block.boy .container {
     align-items: center;
+    padding-bottom: 0;
 }
 .anons-header {
     text-transform: uppercase;
@@ -321,8 +327,9 @@ footer {
     width: 11.25em;
 }
 .img.slogan {
-    background-image: url('img/IskraSlogan.jpg');
-    aspect-ratio: 536 / 324;
+    /*background-image: url('img/IskraSlogan.jpg');*/
+    background-image: url('img/IskraDevizBig.png');
+    /*aspect-ratio: 536 / 324;*/
     height: 20em;
     width: 100%;
     background-size: contain;
@@ -372,8 +379,7 @@ footer {
 }
 .column-wrapper .content {
     position: relative;
-    font-size: 1.4em;
-    line-height: 1.5;
+    font-size: 1.25em;
 }
 .column-wrapper .content .text-wrapper {
     padding: 1.5em;
