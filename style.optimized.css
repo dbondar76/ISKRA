@@ -176,14 +176,31 @@ footer {
     justify-content: center;
 }
 .block.about .container {
-    align-items: center;
     padding-bottom: 0;
 }
 .block.about .container .block-text span {
     color: red;
 }
-.block.light .container {
-    padding: 0 0 3.75em;
+.block.about .block-text {
+    background-image: url('img/IskraFlashlightVol3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 80% bottom;
+    min-height: 18em;
+}
+@media (max-width: 600px) {
+    .block.about .container, .block.balcony .container, .block.boy .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2em;
+        padding: 2em 0 0 0;
+    }
+    .block.about .img.mask, .block.balcony .img.balcony, .block.boy .img.boy {
+        margin-bottom: 1em;
+    }
+    .block.about .block-text, .block.balcony .block-text, .block.boy .block-text {
+        text-align: center;
+    }
 }
 .block.crowd .container {
     padding-top: 0;
