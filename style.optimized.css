@@ -140,9 +140,6 @@ footer {
 .block-text {
     font-size: 1.25em;
 }
-.block-text p {
-    margin: unset;
-}
 .block-text .title {
     font-size: 1.5em;
     font-weight: bold;
@@ -150,6 +147,8 @@ footer {
 }
 .block .vip {
     color: #ff0000;
+    font-size: 1.25em;
+    font-weight: normal;
 }
 .block .bic {
     text-transform: uppercase;
@@ -178,10 +177,6 @@ footer {
     align-items: center;
     padding-bottom: 0;
 }
-.block.about .container .block-text {
-    font-size: 1.5em;
-    line-height: 1.8;
-}
 .block.about .container .block-text span {
     color: red;
 }
@@ -202,10 +197,6 @@ footer {
 }
 .block.boy .container {
     align-items: center;
-}
-.block.boy .container .block-text {
-    font-size: 1.7em;
-    line-height: 1.8;
 }
 .anons-header {
     text-transform: uppercase;
@@ -309,7 +300,8 @@ footer {
     background-repeat: no-repeat;
     background-position: right bottom;
     height: 18.75em;    /* 300px */
-    width: 86%;
+    width: 75%;
+    margin-top: -1.6em;
 }
 .img.flashlighter {
     background-image: url('img/IskraFlashlighterOnlyReflected.png');
@@ -346,8 +338,8 @@ footer {
     background-repeat: no-repeat;
 }
 .img.mask {
-    width: 6.25em;      /* 100px */
-    height: 6.25em;     /* 100px */
+    width: 9.375em;
+    height: 9.375em;
     background-image: url('img/IskraMask.jpg');
     background-size: contain;
     background-position: center;
@@ -679,7 +671,6 @@ footer {
 .awards-subtitle {
     color: #ffffff;
     font-size: 1.725em;
-    font-weight: bold;
     margin: 4em 0 0.5em;
  }
 .awards-envelope-bg {
