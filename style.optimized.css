@@ -166,6 +166,12 @@ footer {
     max-width: 75em;
     margin: 0 auto;
 }
+@media (max-width: 600px) {
+    .block .container {
+        gap: 1.5em;
+        padding: 2em 1em;
+    }
+}
 .block .container.alt {
     background-color: #f5f5f5;
 }
@@ -211,7 +217,7 @@ footer {
 .block.crowd .container {
     padding-top: 0;
 }
-.block.fourth-block .container {
+.block.fourth-block .container, .block.hand .container {
     align-items: center;
 }
 .block.anons .container {
@@ -231,7 +237,7 @@ footer {
 }
 .anons-header {
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 1.25em;
     color: red;
     padding-bottom: 2em;
     font-weight: 600;
@@ -338,7 +344,7 @@ footer {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left;
-    height: 21em;
+    height: 16em;
     width: 100%;
     position: relative;
 }
@@ -384,7 +390,7 @@ footer {
 .img.balcony {
     width: 9.375em;
     height: 12.5em;
-    background-image: url('img/IskraBalcony1.jpg');
+    background-image: url('img/IskraBalcony.jpg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -394,6 +400,14 @@ footer {
     /*aspect-ratio: 614 / 807;*/
     width: 9.375em;
     height: 12.5em;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img.hand {
+    background-image: url('img/IskraHand.jpg');
+    width: 9.375em;
+    height: 9.375em;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -469,7 +483,7 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-left: 21em;
+    padding-left: 16em;
     align-items: flex-start;
     justify-content: flex-end;
     height: 100%;
@@ -478,6 +492,13 @@ footer {
     margin: 0;
     font-size: 1.8em;
     text-transform: uppercase;
+}
+@media (max-width: 600px) {
+    .fourth-block-title-container p{
+        margin: 0;
+        font-size: 1.3em;
+        text-transform: uppercase;
+    }
 }
 .fourth-block-description-container{
     width: 100%;
@@ -543,12 +564,20 @@ footer {
     align-items: stretch;
 }
 .anons-text-container {
+    background-image: url('img/IskraKids.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
     flex: 1 1 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
     font-size: 1.3em;
+    width: 100%;
+}
+.anons-content-container {
+    width: 100%;
 }
 .anons-text-wrapper {
     display: flex;
@@ -557,7 +586,7 @@ footer {
     justify-items: stretch;
 }
 .anons-text-wrapper ul {
-    width: 21.25em;
+    flex: 1;
 }
 .anons-text-wrapper .list-title {
     font-weight: bold;
@@ -566,6 +595,7 @@ footer {
     min-width: 10em;
     text-align: right;
     padding: 0 0 0 0.5em;
+    width: 35%;
 }
 .img.kids {
     background-image: url('img/IskraKids.png');
