@@ -62,7 +62,7 @@ header .nav-list a:hover {
 }
 main {
     display: block;
-    padding: 0 0 18.75em;
+    padding: 0 0 20em;
     min-height: 100vh;
 }
 footer {
@@ -172,8 +172,14 @@ footer {
 .block .container .flexible {
     flex: 1;
 }
-.block.intro2 .container {
+.block.intro2 .container, .block.intro3 .container {
     justify-content: center;
+}
+.block.intro3 .container {
+    padding-bottom: 0;
+}
+.block.intro3 .logo.big {
+
 }
 .block.about .container {
     padding-bottom: 0;
@@ -209,7 +215,7 @@ footer {
     align-items: center;
 }
 .block.anons .container {
-    padding: 3.75em 0 0;
+    padding: 0 0 4em;
     gap: 0;
 }
 .block.balcony .container {
@@ -218,6 +224,9 @@ footer {
 }
 .block.boy .container {
     align-items: center;
+    padding-bottom: 0;
+}
+.block.info .container {
     padding-bottom: 0;
 }
 .anons-header {
@@ -312,9 +321,8 @@ footer {
     height: 8.75em;
     width: 100%;
     background-size: contain;
-    background-position: right center;
+    background-position: center;
     background-repeat: no-repeat;
-    margin-right: 14%;
 }
 .img.flashlight {
     background-image: url('img/IskraFlashlightVol3.png');
@@ -360,6 +368,10 @@ footer {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+}
+.img.logo.big {
+    width: 25em;
+    height: 6.25em;
 }
 .img.mask {
     width: 9.375em;
@@ -431,6 +443,8 @@ footer {
     height: 90%;
     gap: 0.625em;
     padding: 0 0 0 2.5em;
+    width: 56%;
+    align-items: flex-end;
 }
 .first-block-text p{
     margin: 0;
