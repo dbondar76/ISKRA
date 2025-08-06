@@ -70,7 +70,7 @@ footer {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 20em;
+    height: 290px;
     width: 100%;
     z-index: 10;
     background-color: #363636;
@@ -83,7 +83,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     gap: 1.3em 2.3em;
-    padding: 1.4em 2em 1.3em 2em;
+    /*padding: 1.4em 2em 1.3em 2em;*/
     border-radius: 1.3em 1.3em 0 0;
     justify-content: center;
     align-items: center;
@@ -200,6 +200,28 @@ footer {
     background-position: 80% bottom;
     min-height: 18em;
 }
+.block.crowd .container {
+    padding-top: 0;
+}
+.block.fourth-block .container {
+    align-items: center;
+    padding-top: 0;
+}
+.block.anons .container {
+    padding: 0 0 4em;
+    gap: 0;
+}
+.block.balcony .container {
+    padding-bottom: 0;
+    align-items: center;
+}
+.block.boy .container {
+    align-items: flex-end;
+    padding-bottom: 2em;
+}
+.block.info .container {
+    padding-bottom: 0;
+}
 @media (max-width: 600px) {
     .block.about .container, .block.balcony .container, .block.boy .container {
         flex-direction: column;
@@ -213,27 +235,6 @@ footer {
     .block.about .block-text, .block.balcony .block-text, .block.boy .block-text {
         text-align: center;
     }
-}
-.block.crowd .container {
-    padding-top: 0;
-}
-.block.fourth-block .container, .block.hand .container {
-    align-items: center;
-}
-.block.anons .container {
-    padding: 0 0 4em;
-    gap: 0;
-}
-.block.balcony .container {
-    padding-bottom: 0;
-    align-items: center;
-}
-.block.boy .container {
-    align-items: center;
-    padding-bottom: 0;
-}
-.block.info .container {
-    padding-bottom: 0;
 }
 .anons-header {
     text-transform: uppercase;
@@ -343,7 +344,7 @@ footer {
     background-image: url('img/IskraFlashlighterOnlyReflected.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
     height: 16em;
     width: 100%;
     position: relative;
@@ -361,7 +362,7 @@ footer {
     /*background-image: url('img/IskraSlogan.jpg');*/
     background-image: url('img/IskraDevizBig.png');
     /*aspect-ratio: 536 / 324;*/
-    height: 20em;
+    height: 16em;
     width: 100%;
     background-size: contain;
     background-position: center;
@@ -376,8 +377,8 @@ footer {
     background-repeat: no-repeat;
 }
 .img.logo.big {
-    width: 25em;
-    height: 6.25em;
+    width: 12em;
+    height: 5em;
 }
 .img.mask {
     width: 9.375em;
@@ -437,7 +438,8 @@ footer {
     font-weight: bold;
     color: red;
     padding-top: 1em;
-    text-align: center;
+    text-align: right;
+    width: 100%;
 }
 
 /* first-block */
@@ -454,11 +456,11 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 90%;
+    height: 94%;
     gap: 0.625em;
     padding: 0 0 0 2.5em;
-    width: 56%;
-    align-items: flex-end;
+    width: 60%;
+    align-items: center;
 }
 .first-block-text p{
     margin: 0;
@@ -471,7 +473,14 @@ footer {
     font-size: 5.0em;
     color: red;
 }
-
+@media (max-width: 600px) {
+    .first-block-text1{
+        font-size: 1.5em;
+    }
+    .first-block-text2{
+        font-size: 3.5em;
+    }
+}
 /* fourth-block */
 .fourth-block-container{
     width: 100%;
@@ -483,21 +492,28 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-left: 16em;
+    padding: 0 10% 0 50%;
     align-items: flex-start;
     justify-content: flex-end;
     height: 100%;
 }
-.fourth-block-title-container p{
+.block.hand .container p{
     margin: 0;
-    font-size: 1.8em;
+    font-size: 1.6em;
     text-transform: uppercase;
 }
+.block.other .container {
+    padding-left: 0;
+    padding-right: 0;
+}
 @media (max-width: 600px) {
-    .fourth-block-title-container p{
+    .block.hand .container p{
         margin: 0;
-        font-size: 1.3em;
+        font-size: 1.2em;
         text-transform: uppercase;
+    }
+    .block .slog {
+        font-size: 1.5em;
     }
 }
 .fourth-block-description-container{
@@ -860,7 +876,7 @@ footer {
     color: #26201b;
     background: #fff;
     border-radius: 1.2em;
-    padding: 2.1em 1.5em 1.5em 2em;
+    padding: 0;
 }
 .find-us-info .address {
     font-weight: bold;
@@ -880,9 +896,21 @@ footer {
     font-style: italic;
     font-size: 0.97em;
 }
-
 @media (max-width: 900px) {
-    .find-us-flex { flex-direction: column; gap: 1.2em; }
+    .find-us-flex { flex-direction: column; gap: 1.2em; align-items: center;}
     .find-us-map, .find-us-info { max-width: 100%; min-width: 0; }
     .find-us-info { padding: 1.3em 0.7em; }
+    .block.about .block-text {
+        min-height: unset;
+        background-image: none;
+    }
+}
+@media (max-width: 600px) {
+    .anons-text-wrapper {
+        flex-direction: column;
+        width: 50%;
+    }
+    .anons-text-container {
+        background-position: 100% 40%;
+    }
 }
