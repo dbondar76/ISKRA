@@ -284,7 +284,7 @@
                   <a href="tel:+375296878989">+375 29 68 78 989</a> (Telegram, WhatsApp) |
                   <a href="tel:+375296878988">+375 29 68 78 988</a> (Viber)
                 </span>
-                <span><b>Адрес:</b> пр-т. Машерова 11, корп. «Наследие», 7 эт., зал «ИСКРА»</span>
+                <span><b>Адрес:</b> <span class="map-marker" id="openMap"></span> пр-т. Машерова 11, корп. «Наследие», 7 эт., зал «ИСКРА»</span>
                 <span><b>Транспорт:</b> Шаговая доступность от ст.метро Пл. Победы, Я. Коласа,<br>трамваи 3,4,5, троллейбусы 29,40,40а, автобусы 18,24,26,39<br>Довезут прямо до входа в наше здание.</span>
                 <span><b>Instagram:</b>
                   <a href="https://instagram.com/teatr_iskra" target="_blank">@teatr_iskra</a>
@@ -292,6 +292,13 @@
                 <span><b>OOO «Детский театр-студия ИСКРА Елены Борисовой»</b> Рег. номер 193709454</span>
             </div>
         </footer>
+    </div>
+    <div id="mapModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeMap">&times;</span>
+            <iframe src="https://www.google.com/maps?q=пр-т+Машерова+11,+Минск&output=embed"
+                    width="100%" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+        </div>
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -346,6 +353,23 @@
             window.addEventListener('resize', updateArrows);
 
             setTimeout(updateArrows, 200);
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            const openMapBtn = document.getElementById('openMap');
+            const mapModal = document.getElementById('mapModal');
+            const closeMapBtn = document.getElementById('closeMap');
+
+            openMapBtn.addEventListener('click', () => {
+                mapModal.style.display = 'block';
+            });
+            closeMapBtn.addEventListener('click', () => {
+                mapModal.style.display = 'none';
+            });
+            window.addEventListener('click', (e) => {
+                if (e.target === mapModal) {
+                    mapModal.style.display = 'none';
+                }
+            });
         });
     </script>
 </body>
