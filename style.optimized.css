@@ -652,7 +652,7 @@ footer {
     z-index: 5;
     width: 2.75em;
     height: 2.75em;
-    background: rgba(255,255,255,0.75);
+    background: rgba(255,255,255,0.25);
     border: none;
     border-radius: 50%;
     box-shadow: 0 0.125em 0.625em rgba(60,20,10,0.14);
@@ -709,7 +709,7 @@ footer {
 }
 .gallery-carousel img:hover,
 .gallery-carousel img:focus-visible {
-    transform: scale(1.1);
+    transform: scale(1.2);
     z-index: 1;
     box-shadow: 0 0.5em 1.75em rgba(60,20,10,0.16);
 }
@@ -800,7 +800,7 @@ footer {
     z-index: 5;
     width: 2.75em;
     height: 2.75em;
-    background: rgba(255,255,255,0.75);
+    background: rgba(255,255,255,0.25);
     border: none;
     border-radius: 50%;
     box-shadow: 0 0.125em 0.625em rgba(60,20,10,0.15);
