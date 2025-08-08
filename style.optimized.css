@@ -183,6 +183,7 @@ footer {
 }
 .block.intro3 .container {
     padding-bottom: 0;
+    padding-left: 20em;
 }
 .block.intro3 .logo.big {
 
@@ -235,6 +236,9 @@ footer {
     .block.about .block-text, .block.balcony .block-text, .block.boy .block-text {
         text-align: center;
     }
+    .block.intro3 .container {
+        padding-left: 1em;
+    }
 }
 .anons-header {
     text-transform: uppercase;
@@ -242,6 +246,8 @@ footer {
     color: red;
     padding-bottom: 2em;
     font-weight: 600;
+    margin-top: -0.5em;
+    padding-right: 12em;
 }
 .column-wrapper {
     border-radius: 0.9375em;
@@ -265,9 +271,16 @@ footer {
         flex-direction: column;
         gap: 2em;
     }
+
     .block.info .column-wrapper {
         width: 100%;
         min-width: 0;
+    }
+}
+@media (max-width: 600px) {
+    .anons-header {
+        padding-right: 0;
+        margin-top: 0;
     }
 }
 .img.ph1 {
@@ -362,11 +375,12 @@ footer {
     /*background-image: url('img/IskraSlogan.jpg');*/
     background-image: url('img/IskraDevizBig.png');
     /*aspect-ratio: 536 / 324;*/
-    height: 16em;
+    height: 14em;
     width: 100%;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    margin-left: 7em;
 }
 .img.logo {
     width: 12.5em;
@@ -377,8 +391,8 @@ footer {
     background-repeat: no-repeat;
 }
 .img.logo.big {
-    width: 12em;
-    height: 5em;
+    width: 10em;
+    height: 4em;
 }
 .img.mask {
     width: 9.375em;
@@ -407,10 +421,10 @@ footer {
 }
 .img.hand {
     background-image: url('img/IskraHand.jpg');
-    width: 9.375em;
-    height: 9.375em;
+    width: 7.9em;
+    height: 7.9em;
     background-size: contain;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
 }
 .img.clown {
@@ -458,9 +472,9 @@ footer {
     justify-content: flex-end;
     height: 94%;
     gap: 0.625em;
-    padding: 0 0 0 2.5em;
+    padding: 0 0 0 7.5em;
     width: 60%;
-    align-items: center;
+    align-items: flex-start;
 }
 .first-block-text p{
     margin: 0;
@@ -480,6 +494,9 @@ footer {
     .first-block-text2{
         font-size: 3.5em;
     }
+    .first-block-text{
+        padding-left: 3em;
+    }
 }
 /* fourth-block */
 .fourth-block-container{
@@ -497,10 +514,20 @@ footer {
     justify-content: flex-end;
     height: 100%;
 }
+.block.hand .container {
+    padding-bottom: 0;
+    padding-left: 0;
+    gap: 0;
+    align-items: stretch;
+}
 .block.hand .container p{
     margin: 0;
     font-size: 1.6em;
     text-transform: uppercase;
+}
+.block.hand .block-text {
+    background-color: #fff;
+    padding-left: 3em;
 }
 .block.other .container {
     padding-left: 0;
@@ -514,6 +541,9 @@ footer {
     }
     .block .slog {
         font-size: 1.5em;
+    }
+    .fourth-block-title-container {
+        padding-right: 0;
     }
 }
 .fourth-block-description-container{
@@ -610,7 +640,7 @@ footer {
     line-height: 1.4;
     min-width: 10em;
     text-align: right;
-    padding: 0 0 0 0.5em;
+    padding: 0 0.5em;
     width: 35%;
 }
 .img.kids {
@@ -900,8 +930,10 @@ footer {
     .find-us-map, .find-us-info { max-width: 100%; min-width: 0; }
     .find-us-info { padding: 1.3em 0.7em; }
     .block.about .block-text {
-        min-height: unset;
-        background-image: none;
+        min-height: 10em;
+        /*background-image: none;*/
+        background-position-x: 100%;
+        padding-right: 6em;
     }
 }
 @media (max-width: 600px) {
