@@ -70,7 +70,6 @@ footer {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 290px;
     width: 100%;
     z-index: 10;
     background-color: #363636;
@@ -125,6 +124,7 @@ footer {
         padding: 1.1em 0.7em;
         font-size: 0.99em;
         border-radius: 0.7em 0.7em 0 0;
+        margin-top: 0;
     }
     .contacts-bar.iskra span {
         line-height: 1.35;
@@ -207,6 +207,12 @@ footer {
 .block.fourth-block .container {
     align-items: center;
     padding-top: 0;
+    background-image: url('img/ManComboFont.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 18em;
+    width: 100%;
 }
 .block.anons .container {
     padding: 0 0 4em;
@@ -353,15 +359,6 @@ footer {
     width: 75%;
     margin-top: -1.6em;
 }
-.img.flashlighter {
-    background-image: url('img/IskraFlashlighterOnlyReflected.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 16em;
-    width: 100%;
-    position: relative;
-}
 .img.podium {
     background-image: url('img/IskraPodium3.jpg');
     aspect-ratio: 640 / 482;
@@ -371,16 +368,15 @@ footer {
     height: 7.5em;
     width: 11.25em;
 }
-.img.slogan {
-    /*background-image: url('img/IskraSlogan.jpg');*/
-    background-image: url('img/IskraDevizBig.png');
-    /*aspect-ratio: 536 / 324;*/
+.block.slogan .container {
+    background-image: url('img/LogoComboNew.png');
     height: 14em;
     width: 100%;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    margin-left: 7em;
+    padding-top: 0;
+    margin-bottom: 2em;
 }
 .img.logo {
     width: 12.5em;
@@ -596,14 +592,6 @@ footer {
     justify-content: center;
     padding-top: 3.125em;
 }
-.fourth-block-img{
-    background-image: url('img/IskraFlashlighterOnly.png');
-    width: 100%;
-    height: 18.75em;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 /* ANONS */
 .container.anons-flex {
@@ -714,18 +702,12 @@ footer {
     background: #fbe7e7;
     outline: none;
 }
-/* Показывать стрелки только на >= 900px */
 @media (min-width: 300px) {
     .carousel-arrow {
         display: block;
     }
 }
-/* Скрыть стрелки на мобильных */
-/*@media (max-width: 899px) {
-    .carousel-arrow {
-        display: none;
-    }
-}*/
+
 .gallery-carousel img {
     height: 23.75em;
     width: auto;
