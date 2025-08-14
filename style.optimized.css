@@ -245,6 +245,9 @@ footer {
     .block.intro3 .container {
         padding-left: 1em;
     }
+    .block.fourth-block .container {
+        height: 20em;
+    }
 }
 .anons-header {
     text-transform: uppercase;
@@ -416,6 +419,7 @@ footer {
     background-repeat: no-repeat;
 }
 .img.hand {
+    background-color: white;
     background-image: url('img/IskraHand.jpg');
     width: 7.9em;
     height: 7.9em;
